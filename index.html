@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sunwal Cafe & Restro</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>Sunwal Cafe & Restro</h1>
+  <p id="greeting">Hello Sir/Madam, How are you? What would you like to have?</p>
+  <input type="text" id="userInput" placeholder="Enter your choice">
+  <button onclick="serveFood()">Submit</button>
+
+
+  <button id="showMenuBtn" onclick="showMenu()">Show Menu</button>
+  <button id="closeMenuBtn" onclick="closeMenu()" style="display:none;">Close Menu</button>
+  <div id="foodList"></div>
+
+
+
+  <div id="foodList"></div>
+  <center>
+  <div id="feedbackSection" class="hidden">
+    <p> Please provide your feedback:</p>
+    <div id="stars">
+      <span onclick="rate(1)">★</span>
+      <span onclick="rate(2)">★</span>
+      <span onclick="rate(3)">★</span>
+      <span onclick="rate(4)">★</span>
+      <span onclick="rate(5)">★</span>
+    </div>
+  </div>
+</center>
+  <footer>
+    <div class="footer-content">
+      <p>Project by <a href="https://www.parbumahatchhetry.com.np" target="_self">Parbhu Mahat Chhetry</a></p>
+    </div>
+  </footer>
+</div>
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
